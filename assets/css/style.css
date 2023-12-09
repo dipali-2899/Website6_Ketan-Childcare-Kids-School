@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Hind+Siliguri:wght@300&family=Poppins&family=Roboto:wght@300;400;500;700;900&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    --bg-light-orange: #fdf6ed;
+}
+
+/* Universal CSS Start */
+.text-orange {
+    color: #EB512E;
+}
+
+.text-black {
+    color: #1B0238;
+}
+
+.text-silver {
+    color: #6B7EB8;
+}
+
+.bg-orange {
+    background: #EB512E;
+}
+
+.bg-light-orange {
+    background: #fdf6ed;
+}
+.bg-black{
+  background: #091629;
+}
+.bg-yellow {
+    background: #f5890d;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.mt-15 {
+    margin-top: 150px;
+}
+
+.mt-20 {
+    margin-top: 200px;
+}
+
+.mt-25 {
+    margin-top: 380px;
+}
+
+.mt-30 {
+    margin-top: 500px;
+}
+
+.mt-35 {
+    margin-top: 550px;
+}
+
+.mb-5 {
+    margin-bottom: 15px;
+}
+
+.me-45 {
+    margin-left: 45%;
+}
+
+.me-50 {
+    margin-left: 50%;
+}
+
+.me-70 {
+    margin-left: 75%;
+}
+
+.me-80 {
+    margin-left: 80%;
+}
+
+.pt-10 {
+    padding-top: 100px;
+}
+.pt-17{
+    padding-top:170px ;
+}
+.pb-7 {
+    padding-bottom: 70px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    background: #EB512E;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #f5890d;
+}
+
+.btn1 {
+    background: #f5890d;
+}
+
+.btn1:hover {
+    color: #fff;
+    background: #EB512E;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1B0238;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* /Universal CSS End */
+/* nav Section Start */
+a.active {
+    color: #EB512E !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #EB512E !important;
+    transition: 0.3s linear;
+}
+
+.dropdown-menu {
+    width: 280px;
+    border: none;
+    border-radius: 0px;
+    transition: all 4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px;
+}
+
+/* /nav Section End */
+/* Banner Section Start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shape1 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape2 {
+    top: 3.5%;
+    left: .7%;
+    animation: move2 2s linear alternate infinite;
+}
+
+.shape3 {
+    top: 61%;
+    left: .9%;
+    z-index: 9;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape4 {
+    top: 3%;
+    left: .9%;
+    z-index: 6;
+    animation: move3 2s linear alternate infinite;
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1B0238;
+    font-weight: bold;
+}
+
+/* /Banner Section End */
+/* Who We Are Section Start */
+.who span,
+.popular span,
+.core-value span,
+.teacher span,
+.testimonial span,
+.testimoniel span,
+.upcoming span,
+.news span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #EB512E;
+    font-family: 'Sacramento', cursive;
+}
+
+.who h3,
+.popular h3,
+.core-value h3,
+.teacher h3,
+.testimonial h3,
+.upcoming h3,
+.news h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.who .image {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.who .image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #EB512E;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+}
+
+.who .image img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.who .image::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f5890d;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 20s linear infinite alternate forwards;
+
+}
+
+.who ul li {
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.who ul li span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #EB512E;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 8px;
+    transition: all 0.5s ease-in;
+    font-family: "Catamaran", sans-serif;
+    cursor: pointer;
+}
+
+.who ul li:hover span {
+    background: #f5890d;
+    transition: all 0.5s ease-in;
+}
+
+.who .shape5 {
+    right: 6%;
+    z-index: 1;
+    animation: move4 infinite 2s linear alternate;
+}
+
+/* /Who We Are Section End */
+/* Popular Class Section Start */
+.popular .card:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+
+.popular h5:hover {
+    color: #EB512E;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.popular .h4 {
+    font-family: "Catamaran", sans-serif;
+}
+
+.popular .card .price {
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    background-color: #EB512E;
+    right: 0;
+    top: 318px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+    border-radius: 0 0 0 10px;
+}
+
+.popular .card .price:hover {
+    background: #f5890d;
+    transition: all 0.5s ease-in;
+}
+
+/* /Popular Class Section End */
+/* Core Value Section Start */
+.core-value .number {
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3%;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #1B0238;
+    border: 0px solid #fff;
+    outline: 1px solid #e5e4e4;
+    outline-offset: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: "Catamaran", sans-serif;
+}
+
+.core-value .number:hover {
+    color: #fff;
+    background: #EB512E !important;
+    transition: 0.5s;
+    outline-color: #eb512e;
+
+}
+
+/* /Core Value Section End */
+/* Core Teacher Section Start */
+.teacher {
+    background: url(../img/teacher-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9 !important;
+}
+
+.teacher .social-media {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -70px;
+    transition: all 0.5px ease-in;
+}
+
+.teacher .teacher-image {
+    z-index: 9 !important;
+}
+
+.teacher .teacher-image::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #EB512E;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+}
+
+.teacher .teacher-image:hover .social-media {
+    margin-bottom: 0px;
+    transition: all 0.5px ease-out;
+}
+
+.teacher .social-media li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #EB512E;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.teacher .social-media li a {
+    color: #fff;
+}
+
+.teacher .social-media li:hover {
+    background: #f5890d;
+    transition: 0.3s ease;
+}
+
+/* /Core Teacher Section End */
+/* Testimonial Section Start */
+.card.teacher {
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 49%;
+    border: none;
+    background: #fee9ca;
+}
+
+.card.teacher div {
+    width: 65px;
+    height: auto;
+    font-size: 30px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    margin: auto;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+}
+
+.card.teacher:hover div {
+    background: #EB512E;
+    transition: all 0.3s linear;
+}
+
+.card.teacher:hover div .fa-quote-left {
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.testimonial .nav-button button {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 5px;
+    font-weight: 600;
+    background: #EB512E;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s linear;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.testimonial .nav-button button:hover {
+    background: #f5890d;
+    transition: 0.5s linear;
+}
+
+.testimonial .poster img {
+    margin-left: 100px;
+}
+
+.testimonial .poster1 img {
+    margin-left: 240%;
+}
+
+.testimonial .poster2 img {
+    margin-left: 440%;
+}
+
+/* /Testimonial Section End */
+/* Testimoniel Section Start */
+.slider-wrap {
+    margin-top: 30px;
+    position: relative;
+    height: 100px;
+
+}
+
+.slider-main {
+    position: absolute;
+    width: 200%;
+}
+
+.item {
+    display: inline-block;
+}
+
+.item .card {
+    width: 350px;
+    margin-left: 52px;
+    height: auto;
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 49%;
+    background: #fee9ca;
+}
+
+.item .card .awesome {
+    width: 65px;
+    height: auto;
+    font-size: 30px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    margin: auto;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+}
+
+.item .card:hover .awesome {
+    background: #EB512E;
+    transition: all 0.3s linear;
+}
+
+.item .card:hover .awesome .fa-quote-left {
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.testimoniel .nav-button button {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 5px;
+    font-weight: 600;
+    background: #EB512E;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s linear;
+    margin-left: 1px;
+    margin-right: 30px;
+}
+
+.testimoniel .nav-button button:hover {
+    background: #f5890d;
+    transition: 0.5s linear;
+}
+
+.testimoniel .poster img {
+    margin-top: 325px;
+    margin-left: 90px;
+}
+
+/* /Testimoniel Section End */
+/* Upcoming Events Section Start */
+.upcoming{
+    background:url(../img/event-bg.jpg) ;
+    background-size:100% 100% ;
+  background-attachment: fixed; 
+  background-position:center center ;
+  background-repeat:no-repeat ;
+}
+/* /Upcoming Events Section End */
+/* News and blog Section Start */
+.news .card:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+.news .card .card-body{
+    background-color: #fdeee9;
+    border-radius: 0 0 10px 10px;
+}
+.news h5:hover {
+    color: #EB512E;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.news .h4 {
+    font-family: "Catamaran", sans-serif;
+}
+.news .card .h4 ul li a{
+    text-decoration: none;
+    font-size:14px ;
+    font-weight: 600;
+    color: #283d5e;
+}
+/* /News and blog Section End */
+/* Footer Section Start */
+footer{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/footer-bg.jpg) ;
+    background-position:center center; 
+    background-attachment: fixed;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    position: relative;
+}
+ footer h1{   
+    font-size:40px ;
+    font-weight:bold ;
+    font-family:"Catamaran",sans-serif ;
+ } 
+footer .social{
+    height:35px ;
+    width:35px ;
+    color:#fff;
+    text-align: center;
+    line-height: 35px;
+    font-size:16px ;
+    border-radius:50% ;
+    background:#EB512E ;
+}
+footer h3::after{
+    position: absolute;
+    bottom:0 ;
+    left:0 ;
+    content: "";
+    width:60px ;
+    height:2px ;
+    background-color:#EB512E ;
+}
+footer .contact a:hover {
+color:#EB512E !important;
+transition:0.5s ;
+}
+footer .contact a::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom:0 ;
+  width:0 ;
+  height:1px ;
+  color:#EB512E ;
+}
+footer .activity a:hover {
+    color:#EB512E !important;
+    transition:0.5s ;
+    }
+    footer .activity a::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom:0 ;
+      width:0 ;
+      height:1px ;
+      color:#EB512E ;
+    }
+  footer .grid-container{
+    padding-top:20px;
+    display: grid;
+ grid-template-columns: 90px 90px 90px;
+    grid-column-gap: 2px; 
+    grid-row-gap: 2px;
+  }
+  footer .grid-img{
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    transition: 0.5s linear;
+  }
+  footer .grid-img:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+/* /Footer Section End */
+/* Bottom Footer Section Start */
+.bottom{
+    width:100% ;
+    height: auto;
+    background-color: #091629;
+}
+.bottom p span:hover{
+    cursor: pointer;
+}
+/* /Bottom Footer Section End */
+/* Animation Section Start */
+div.rotate2{
+    position: fixed;
+    top:50%;
+    right:20px ;
+    z-index:99 ;
+    margin-top:10px ;
+    width:120px ;
+    height:40px ;
+    border-radius:20px ;
+    display:inline-block ;
+    color:#fff ;
+    padding:10px 20px 10px 20px ;
+    font-size:15px ;
+    font-weight:bold;
+    background-color:greenyellow ;
+    animation:rotate2 2s linear infinite alternate ;
+}
+div.rotate2:hover{
+    background-color:red ;
+    transition:all 0.3s linear ;
+}
+/* /Animation Section End */
+@keyframes move {
+    0% {}
+
+    100% {
+        left: 3%;
+    }
+}
+
+@keyframes move2 {
+    0% {}
+
+    100% {
+        left: 3%;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        top: 5px;
+        ;
+    }
+
+    100% {
+        bottom: 2px;
+
+    }
+}
+
+@keyframes move4 {
+    0% {
+        left: 88%;
+    }
+
+    100% {
+        left: 85%;
+
+    }
+}
+
+@keyframes border-transform-default {
+
+    0%,
+    100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+}
+@keyframes rotate2{
+0%{ transform:scale3d(1,1,1) ;}
+10%{
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+}
+20%{
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+}
+30%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+40%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+50%{ 
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+60%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+70%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+80%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+90%{
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+100%{
+    transform:scale3d(0.9,0.9,0.9) ;
+}
+}
